@@ -1,0 +1,25 @@
+/* Reset Leve */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  font-family: 'Space Mono', monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1rem 0;
+}
+
+ul, ol {
+  list-style: none; 
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

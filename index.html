@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Preconnect para otimização -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <!-- Fontes Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="lightcss.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS do AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <title>Portfólio de [Seu Nome]</title>
+  </head>
+
+  <body>
+    
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand ms-5" href="#">
+          <img
+            src="images/DALL·E 2024-12-03 13.32.14 - A round logo with a soft pastel color palette featuring the letters 'V' and 'R' elegantly intertwined in the center. The design is moderately detailed.webp"
+            alt="Logo" />
+        </a>
+    
+        <!-- Botão Hamburger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+          aria-controls="offcanvasMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Links do Menu -->
+        <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="3000" data-aos-once="true">
+        <div class="mx-auto-custom"> <!-- Adiciona a centralização -->
+          <ul class="navbar-nav d-flex flex-row justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfólio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+
+
+      </div>
+    </nav>
+    
+
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasMenu"
+      aria-labelledby="offcanvasMenuLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="container-fluid d-flex align-items-center section-content">
+      <div class="row w-100">
+        <!-- Texto no lado esquerdo -->
+        <div class="col-lg-6 col-md-6 col-12 text-content">
+          <div data-aos="fade-up" data-aos-duration="3000" data-aos-delay="700" data-aos-once="true">
+            <h1>Bem-vindo ao Meu Portfólio</h1>
+          </div>
+
+          <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700" data-aos-once="true">
+            <p>
+              Sou um desenvolvedor apaixonado por criar soluções criativas e
+              funcionais. Explore meus projetos e entre em contato para
+              colaborar!
+            </p>
+          </div>
+
+          <div class="d-flex justify-content-end button-group">
+            <button class="btn-primary-custom">CURRICULUM</button>
+            <button class="btn-primary-custom ms-3">PROJETOS</button>
+          </div>
+        </div>
+
+      
+
+
+        <!-- Flip card-->
+
+        <div class="flip-card" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="2000" data-aos-once="true">
+          <div class="flip-card-inner">
+            <!-- Lado frontal -->
+            <div class="flip-card-front">
+              <img src="/images/1710292265333.jpeg" alt="Profile Picture" class="profile-img" />
+              <h3>Vitor Rodrigues</h3>
+              <div class="underline"></div>
+
+              <p>Analista de sistemas</p>
+              <p>Segurança da Informação</p>
+              <p>Analista Suporte TI</p>
+            </div>
+            <!-- Lado traseiro -->
+            <div class="flip-card-back">
+              <h3>Contato</h3>
+              <p>Conecte-se comigo:</p>
+              <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100072747310953" target="_blank" class="facebook-icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/vitor-rodrigues-gomes/" target="_blank" class="linkedin-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/vitor_rodrigues_dev/?hl=pt_BR" target="_blank" class="instagram-icon"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bibliotecas como Bootstrap ou efeitos -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scripts personalizados -->
+    <script src="maqescrever.js"></script>
+
+    <!-- JS do AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Inicialize o AOS -->
+    <script>
+      AOS.init();
+    </script>
+  </body>
+
+</html>
