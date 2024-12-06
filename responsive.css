@@ -44,13 +44,13 @@
   width: 300px; /* A largura permanece limitada */
   background: linear-gradient(135deg, #9B8371 0%, #ebd6be 50%, #7a5e47 100%);
   transform: translateX(100%); /* Começa fora da tela */
-  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* Suaviza a abertura */
+  transition: transform 0.9s cubic-bezier(0.25, 1, 0.5, 1); /* Suaviza a abertura */
 }
 
 /* Fundo escurecido com transição */
 .offcanvas-backdrop {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.9s ease-in-out;
 }
 
 .custom-offcanvas .nav-link:hover {
