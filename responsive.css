@@ -1,9 +1,51 @@
 /* Estilos gerais da barra */
-.custom-navbar {
-  background-color: #fff; /* Cor de fundo da barra */
-  height: 80px; /* Altura padrão */
-  padding: 0 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 10;
+
+
+/* Esconder os links no mobile */
+@media (max-width: 768px) {
+  .custom-navbar .mx-auto-custom {
+      display: none;
+  }
+
+  .navbar-toggler {
+      position: absolute;
+      right: 10px;
+      top:10px;
+      background-color: #f5f5f5; /* Cor do fundo do botão hambúrguer */
+      border: none;
+      padding: 5px 5px;
+  }
+  .custom-navbar {
+    background-color: #ffffff; 
+    height: 65px; 
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.51);
+    position: relative;
+    z-index: 10;
+  }
+  .navbar-brand-custom img {
+    margin-left: -60px; /* Adjust this value to move the logo further left */
 }
+
+.navbar-brand img {
+    max-width: 80px; /* Optional: Reduce logo size for mobile */
+}
+
+.custom-offcanvas.show .nav-link {
+  font-size: 23px; /* Tamanho do texto dos links */
+  font-weight: 500;
+  margin: 10px 0;
+  color: #ffffff; /* Cor do texto */
+  text-align: center;
+  text-shadow: black;
+}
+
+.custom-offcanvas.show {
+  width: 300px; /* A largura permanece limitada */
+  background: linear-gradient(135deg, #9B8371 0%, #ebd6be 50%, #7a5e47 100%);
+
+}
+
+}
+ 
+
