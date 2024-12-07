@@ -44,7 +44,18 @@
   /* Quando o offcanvas está visível */
   .custom-offcanvas.show {
     transform: translateX(0); /* Move para dentro da tela */
+    width: 340px;
+    transition: transform 1.3s; 
   }
+
+
+   /*  offcanvas offcanvas-end custom-offcanvas show   */
+  /*.custom-offcanvas .offcanvas-end {
+    /*
+    transform: translateX(0); /* Move para dentro da tela */
+    /*transition: transform 1.3s; 
+  }
+
 
   /* Links do offcanvas */
   .custom-offcanvas .nav-link {
