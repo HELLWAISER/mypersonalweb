@@ -42,7 +42,9 @@
     transform: translateX(0%); 
   }
 
-
+   #offcanvasMenu {
+    width: 320px;
+  }
 
 
   /* Links do offcanvas */
