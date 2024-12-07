@@ -47,6 +47,12 @@
   transition: transform 1.3s cubic-bezier(0.25, 1, 0.5, 1); /* Suaviza a abertura */
 }
 
+  /* Quando o offcanvas abre */
+.custom-offcanvas.show {
+  transform: translateX(0); /* Move para dentro da tela */
+  transition: transform 1.3s cubic-bezier(0.25, 1, 0.5, 1); /* abertura suave */
+}
+
 /* Fundo escurecido com transição */
 .offcanvas-backdrop {
   opacity: 0;
