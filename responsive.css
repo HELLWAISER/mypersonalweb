@@ -35,7 +35,7 @@
 
   /* Estilo do offcanvas */
   .custom-offcanvas {
-    width: 340px; /* Largura do menu */
+    width: 300px; /* Largura do menu */
     background: linear-gradient(135deg, #9B8371 0%, #ebd6be 50%, #7a5e47 100%);
     transform: translateX(100%); /* Escondido inicialmente fora da tela */
     transition: transform 1.3s cubic-bezier(0.25, 1, 0.5, 1); /* Transição suave */
