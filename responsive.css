@@ -9,49 +9,47 @@
     position: absolute;
     right: 10px;
     top: 10px;
-    background-color: #f5f5f5; /* Fundo do botão hambúrguer */
+    background-color: #f5f5f5;
     border: none;
     padding: 5px;
   }
 
   /* Estilo da navbar */
   .custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #ffffff;
     height: 65px;
-    padding: 0 20px;
+    padding: 0 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.51);
     position: relative;
     z-index: 10;
   }
 
-  /* Ajuste do logo */
-  .navbar-brand-custom img {
-    margin-left: -60px; /* Move o logo mais à esquerda */
-  }
-
+  /* Estilo do logo */
   .navbar-brand img {
-    max-width: 80px; /* Reduz o tamanho do logo no mobile */
+    max-width: 80px;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   /* Estilo do offcanvas */
   .custom-offcanvas {
     background: linear-gradient(135deg, #9B8371 0%, #ebd6be 50%, #7a5e47 100%);
-    transform: translateX(80%); 
-    transition: transform 1.3s cubic-bezier(0.25, 1, 0.5, 1); 
-    transform: translateX(0%); 
+    transform: translateX(0%);
+    transition: transform 1.3s cubic-bezier(0.25, 1, 0.5, 1);
   }
 
-   #offcanvasMenu {
-    width: 300px;
+  #offcanvasMenu {
+    width: 335px;
   }
 
-
-  /* Links do offcanvas */
   .custom-offcanvas .nav-link {
-    font-size: 20px; /* Tamanho do texto */
+    font-size: 1rem;
     font-weight: 400;
     margin: 10px 0;
-    color: #000000; /* Cor do texto */
+    color: #000000;
     text-align: center;
   }
 
@@ -60,4 +58,93 @@
     color: #bbb;
     text-decoration: underline;
   }
+
+  /* configuração para os botões  */
+  .btn-primary-custom {
+    background-image: linear-gradient(to right, #603813 0%, #b29f94 51%, #603813 100%);
+  }
+
+  .btn-custom {
+    margin-left: 25px;
+  }
+
+  .btn-gradient {
+    background-image: linear-gradient(to right, #603813 0%, #b29f94 51%, #603813 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background-position 0.3s ease;
+    background-size: 200% 100%;
+  }
+
+  .btn-gradient:hover {
+    transform: scale(1.05);
+    background-position: right center;
+  }
+
+  /* Espaçamento e centralização ajustados */
+  .d-flex.justify-content-center.gap-3 {
+    margin-top: 20px;
+  }
+
+  /* estilo icones redes sociais atras do card  */
+  /* Espaçamento adicional para ícones no mobile */
+  .social-icons a {
+    margin: 0 10px;
+  }
+
+  .social-icons a i {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .social-icons a i:hover {
+    transform: scale(1.2);
+  }
+
+  /* Facebook */
+  .facebook-icon i {
+    color: #3b5998;
+  }
+
+  .facebook-icon i:hover {
+    color: #8b9dc3;
+  }
+
+  /* LinkedIn */
+  .linkedin-icon i {
+    color: #0077b5;
+  }
+
+  .linkedin-icon i:hover {
+    color: #00a0dc;
+  }
+
+  /* Instagram */
+  .instagram-icon i {
+    color: #e4405f;
+  }
+
+  .instagram-icon i:hover {
+    color: #f77737;
+  }
+
+  /* exibição da frase abaixo do card apenas no Mobile  */
+  /* Ocultar frase em telas maiores */
+  .mobile-only {
+    display: none;
+  }
+
+  /* Exibir apenas em telas menores que 768px (mobile) */
+  @media (max-width: 768px) {
+    .mobile-only {
+      display: block;
+      margin-top: 2px;
+      font-size: 0.9rem;
+      color: #000000;
+    }
+  }
+
 }
