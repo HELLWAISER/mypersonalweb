@@ -137,7 +137,6 @@
     display: none;
   }
 
-
   /* ===== espaçamento mobile entre uma section e outra ====== */
   /*
   .card-section {
@@ -145,11 +144,19 @@
   }
   */
   .about-section {
-    padding-top: 50px; 
+    padding-top: 50px;
   }
-  
-/*==========================================================*/
 
+  /* linha sutil sobre mim */
+  .section-divider {
+    border: none;
+    border-top: 1px solid #909090;
+    width: 40%;
+    margin: 10px auto;
+    opacity: 0.6;
+  }
+
+  /*==========================================================*/
   /* Exibir apenas em telas menores que 768px (mobile) */
   @media (max-width: 768px) {
     .mobile-only {
@@ -159,4 +166,4 @@
       color: #000000;
     }
   }
-  }
+}
