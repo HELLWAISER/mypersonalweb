@@ -137,6 +137,19 @@
     display: none;
   }
 
+
+  /* ===== espaçamento mobile entre uma section e outra ====== */
+  /*
+  .card-section {
+    margin-bottom: 80px; 
+  }
+  */
+  .about-section {
+    padding-top: 50px; 
+  }
+  
+/*==========================================================*/
+
   /* Exibir apenas em telas menores que 768px (mobile) */
   @media (max-width: 768px) {
     .mobile-only {
@@ -146,5 +159,4 @@
       color: #000000;
     }
   }
-
-}
+  }
