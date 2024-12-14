@@ -343,3 +343,45 @@ h6 {
   color: #8F1D21;
   margin-right: 10px;
 }
+
+
+/* sessão Portifólio */
+.project-carousel {
+  padding: 50px 20px;
+  
+}
+
+.carousel-item img {
+  object-fit: cover;
+  max-height: 450px;
+  transition: transform 0.5s ease; /* Efeito de zoom */
+}
+
+.carousel-item.active img {
+  transform: scale(1.2); /* Zoom na imagem ativa */
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  border-radius: 10px;
+}
+
+.carousel-caption h4 {
+  color: #fff;
+}
+
+.carousel-caption h5 {
+  color: #9B8371;
+}
+
+.carousel-caption .btn {
+  border-color: #fff;
+}
+
+
