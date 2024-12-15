@@ -1,11 +1,11 @@
 /* Estilos iniciais - cores, fontes, tamanhos... */
 body {
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
-
 p {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 1.2rem;
@@ -17,12 +17,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 700;
 }
 
 /*==============  inico topo cima p/ baixo esquerda para direita  ==========*/
-/* brand */
 .custom-navbar .navbar-brand {
   transition: 0.7s ease-in-out;
 }
@@ -36,7 +35,7 @@ h6 {
 /* config navbar */
 .custom-navbar {
   backdrop-filter: blur(15px);
-  box-shadow: 0px 5px 106px rgba(0, 0, 0, 0.50);
+  box-shadow: 0px 5px 106px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
 }
 
@@ -60,10 +59,10 @@ h6 {
   color: #0095ff;
 }
 
-/*=========================  Section inicial  ======================*/
+/* =========================  Section inicial  ====================== */
 .section-content {
   height: 100vh;
-  background: linear-gradient(135deg, #FAD1C7, #D6E6ED);
+  background: linear-gradient(135deg, #fad1c7, #d6e6ed);
 }
 
 .text-content p {
@@ -78,7 +77,6 @@ h6 {
   height: 400px;
   perspective: 1000px;
   margin: 0px auto;
-
 }
 
 .flip-card-inner {
@@ -122,7 +120,7 @@ h6 {
 .flip-card-front h3 {
   font-size: 1.5rem;
   padding: 20px;
-  color: #9B8371;
+  color: #9b8371;
 }
 
 .flip-card-front p {
@@ -142,14 +140,14 @@ h6 {
 .underline {
   width: 100px;
   height: 1px;
-  background-color: #9B8371;
+  background-color: #9b8371;
   margin: 0px auto 0;
   margin-bottom: 30px;
 }
 
 /* Parte de trás Flip-card */
 .flip-card-back {
-  background: linear-gradient(135deg, #9B8371 0%, #BBAE9E 50%, #7A5E47 100%);
+  background: linear-gradient(135deg, #9b8371 0%, #bbae9e 50%, #7a5e47 100%);
   color: white;
   transform: rotateY(180deg);
   text-align: center;
@@ -175,11 +173,10 @@ h6 {
 }
 
 .social-icons a:hover {
-  color: #0D6EFD;
+  color: #0d6efd;
 }
 
 /* estilização individual dos icones redes sociais back-flip */
-/* Facebook */
 .facebook-icon i {
   color: #3b5998;
   transition: color 0.3s ease;
@@ -199,7 +196,6 @@ h6 {
   color: #71c9f8;
 }
 
-/* LinkedIn */
 .linkedin-icon i {
   color: #0077b5;
   transition: color 0.3s ease;
@@ -209,7 +205,6 @@ h6 {
   color: #00a0dc;
 }
 
-/* Instagram */
 .instagram-icon i {
   color: #e4405f;
   transition: color 0.3s ease;
@@ -229,7 +224,12 @@ h6 {
 }
 
 .btn-primary {
-  background-image: linear-gradient(to right, #603813 0%, #b29f94 51%, #603813 100%);
+  background-image: linear-gradient(
+    to right,
+    #603813 0%,
+    #b29f94 51%,
+    #603813 100%
+  );
   background-size: 200% auto;
   background-position: left;
   color: white;
@@ -271,13 +271,12 @@ h6 {
 }
 
 .image-container {
-  position: relative
+  position: relative;
 }
 
 .image-container img {
   width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
 }
 
 .gradient-overlay {
@@ -293,7 +292,7 @@ h6 {
 }
 
 .about-section h2 {
-  color: #8F1D21;
+  color: #8f1d21;
 }
 
 .section-divider {
@@ -304,13 +303,11 @@ h6 {
   opacity: 0.6;
 }
 
-
 .about-section p {
   color: #555;
   font-size: 1.1rem;
 }
 
-/*desing */
 /* Fundo com efeito de relevo */
 .reveal-box {
   background-color: #fff;
@@ -322,43 +319,51 @@ h6 {
 
 /* Fundo geral da seção */
 .about-section {
-  background: linear-gradient(135deg, #D6E6ED, #FAD1C7);
+  background: linear-gradient(135deg, #d6e6ed, #fad1c7);
   padding: 60px 20px;
 }
 
 /* Título */
 .about-section h2 {
-  color: #9B8371;
+  color: #9b8371;
   text-align: center;
 }
 
 /* Lista de habilidades */
 .about-section ul li {
   font-size: 1.1rem;
-  color: #9B8371;
+  color: #9b8371;
   margin-bottom: 10px;
 }
 
 .about-section ul li i {
-  color: #8F1D21;
+  color: #8f1d21;
   margin-right: 10px;
 }
 
-
-/* sessão Portifólio */
-.project-carousel {
-  padding: 50px 20px;
-  
+/* ================================ paralax ====================================== */
+.parallax {
+  background-image: url("/images/banner-2143661_1280.jpg");
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* ========================= sessão Portifólio / carrosel ======================== */
 .carousel-item img {
   object-fit: cover;
   max-height: 450px;
-  transition: transform 0.5s ease; /* Efeito de zoom */
+  transition: transform 0.5s ease;
 }
 
 .carousel-item.active img {
-  transform: scale(1.2); /* Zoom na imagem ativa */
+  transform: scale(1.2);
 }
 
 .carousel-caption {
@@ -368,7 +373,7 @@ h6 {
   transform: translateX(-50%);
   text-align: center;
   width: 80%;
-  background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 
@@ -377,11 +382,117 @@ h6 {
 }
 
 .carousel-caption h5 {
-  color: #9B8371;
+  color: #9b8371;
 }
 
 .carousel-caption .btn {
-  border-color: #fff;
+  border-color: #f6ac72;
 }
 
+/* ================================= sessão tecnologias ==================== */
+.skills-section i {
+  transition: transform 0.3s ease;
+}
 
+.skills-section i:hover {
+  transform: scale(1.2);
+}
+
+.color-custom {
+  background-clip: text;
+  color: #6f4e37;
+  display: inline-block;
+}
+
+/* Cursos e cerificações */
+.education-section .card-img-top {
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.education-section .card {
+  transition: transform 0.3s ease;
+}
+
+.education-section .card:hover {
+  transform: scale(1.05);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+/* formas geometricas atrás das certificações  */
+.certifications-section {
+  background: linear-gradient(135deg, #fce3dc, #d6e6ed);
+  position: relative;
+  padding: 50px 0;
+}
+
+.certifications-section::before,
+.certifications-section::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 184, 77, 0.181);
+  border-radius: 50%;
+  z-index: 0;
+  overflow: hidden;
+  /* Evita ultrapassar limites */
+}
+
+.certifications-section::before {
+  top: -50px;
+  left: 0;
+  /* Limita a partir da borda esquerda */
+}
+
+.certifications-section::after {
+  bottom: -50px;
+  right: 0;
+  /* Limita a partir da borda direita */
+}
+
+.certifications-section .container {
+  position: relative;
+  z-index: 2;
+  /* Conteúdo acima das formas */
+}
+
+/* Estilo botões cards diplomas */
+/* Estilização do Botão */
+.btn-gradient {
+  display: inline-block;
+  padding: 3px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, #6e4c1e, #9d6b38);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #9d6b38, #6e4c1e);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* Ajuste do Card */
+.education-section .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.education-section .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
