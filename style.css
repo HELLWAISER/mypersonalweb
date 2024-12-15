@@ -343,7 +343,7 @@ h6 {
 
 /* ================================ paralax ====================================== */
 .parallax {
-  background-image: url("/images/banner-2143661_1280.jpg");
+  background-image: url("images/banner-2143661_1280.jpg");
   height: 200px;
   background-attachment: fixed;
   background-position: center;
