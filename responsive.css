@@ -59,7 +59,7 @@
     text-decoration: underline;
   }
 
-  /* configuração para os botões  */
+  /* configuração para os botões */
   .btn-primary-custom {
     background-image: linear-gradient(to right, #603813 0%, #b29f94 51%, #603813 100%);
   }
@@ -91,7 +91,6 @@
   }
 
   /* estilo icones redes sociais atras do card  */
-  /* Espaçamento adicional para ícones no mobile */
   .social-icons a {
     margin: 0 10px;
   }
@@ -104,7 +103,6 @@
     transform: scale(1.2);
   }
 
-  /* Facebook */
   .facebook-icon i {
     color: #3b5998;
   }
@@ -113,7 +111,6 @@
     color: #8b9dc3;
   }
 
-  /* LinkedIn */
   .linkedin-icon i {
     color: #0077b5;
   }
@@ -122,7 +119,6 @@
     color: #00a0dc;
   }
 
-  /* Instagram */
   .instagram-icon i {
     color: #e4405f;
   }
@@ -131,18 +127,12 @@
     color: #f77737;
   }
 
-  /* exibição da frase abaixo do card apenas no Mobile  */
-  /* Ocultar frase em telas maiores */
+  /* frase abaixo do card apenas no Mobile  */
   .mobile-only {
     display: none;
   }
 
-  /* ===== espaçamento mobile entre uma section e outra ====== */
-  /*
-  .card-section {
-    margin-bottom: 80px; 
-  }
-  */
+  /* espaçamento mobile entre uma section e outra*/
   .about-section {
     padding-top: 50px;
   }
@@ -156,8 +146,7 @@
     opacity: 0.6;
   }
 
-  /*==========================================================*/
-  /* Exibir apenas em telas menores que 768px (mobile) */
+  /* Exibir apenas em telas menores que 768px / texto abaixo do flip card */
   @media (max-width: 768px) {
     .mobile-only {
       display: block;
@@ -165,5 +154,19 @@
       font-size: 0.9rem;
       color: #000000;
     }
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* Estilos específicos para mobile */
+  .container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none; /* Esconde os botões de navegação */
   }
 }
