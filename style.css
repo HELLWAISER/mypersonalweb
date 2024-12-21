@@ -356,7 +356,7 @@ h6 {
 /* ========================= sessão Portifólio / carrosel ======================== */
 .carousel-item img {
   object-fit: cover;
-  max-height: 450px;
+  max-height: 500px;
   transition: transform 0.2s ease;
 }
 
