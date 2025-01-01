@@ -19,6 +19,7 @@ h5,
 h6 {
   font-family: "Poppins";
   font-weight: 700;
+  color: #9b8371;
 }
 
 /*==============  inico topo cima p/ baixo esquerda para direita  ==========*/
@@ -62,7 +63,7 @@ h6 {
 /* =========================  Section inicial  ====================== */
 .section-content {
   height: 100vh;
-  background: linear-gradient(135deg, #fad1c7, #d6e6ed);
+  background: linear-gradient(0deg, #fad1c7, #d6e6ed);
 }
 
 .text-content p {
@@ -224,10 +225,12 @@ h6 {
 }
 
 .btn-primary {
-  background-image: linear-gradient(to right,
-      #603813 0%,
-      #b29f94 51%,
-      #603813 100%);
+  background-image: linear-gradient(
+    to right,
+    #603813 0%,
+    #b29f94 51%,
+    #603813 100%
+  );
   background-size: 200% auto;
   background-position: left;
   color: white;
@@ -263,18 +266,19 @@ h6 {
 }
 
 /* sessão sobre  */
-.about-section {
-  background-color: #f9f9f9;
-  padding-top: 70px;
+.section-custom-about {
+  background: linear-gradient(180deg, #fad1c7, #d6e6ed, white);
+  padding-top: 80px;
 }
 
 .image-container {
   position: relative;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.6); /* Corrigido */
+  border-radius: 8px; /* Opcional: para harmonizar com a borda da imagem */
 }
 
 .image-container img {
   width: 100%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .gradient-overlay {
@@ -287,10 +291,6 @@ h6 {
   border-radius: 10px;
   z-index: 1;
   pointer-events: none;
-}
-
-.about-section h2 {
-  color: #8f1d21;
 }
 
 .section-divider {
@@ -308,16 +308,16 @@ h6 {
 
 /* Fundo com efeito de relevo */
 .reveal-box {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.6);
   margin: 0 auto;
   max-width: 1200px;
 }
 
 /* Fundo geral da seção */
 .about-section {
-  background: linear-gradient(135deg, #d6e6ed, #fad1c7);
+  background: linear-gradient(180deg, #fad1c7, #d6e6ed, white);
   padding: 60px 20px;
 }
 
@@ -424,7 +424,7 @@ h6 {
 
 /* formas geometricas atrás das certificações  */
 .certifications-section {
-  background: linear-gradient(135deg, #fce3dc, #d6e6ed);
+  background: linear-gradient(360deg, #f7d6cd, #d6e6ed, white);
   position: relative;
   padding: 50px 0;
 }
@@ -493,4 +493,93 @@ h6 {
 .education-section .card:hover {
   transform: scale(1.03);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo icones de redes sociais - section = Entre em Contato */
+.contact-section {
+  background: linear-gradient(180deg, #fad1c7, #d6e6ed, white);
+}
+
+.location {
+  background: linear-gradient(0deg, #fad1c7, #d6e6ed, white);
+}
+
+/* section contatos - icones redes */
+/* Estilização específica para os ícones da seção de contato */
+.icons-contato-custom {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.icons-contato-custom .social-icon {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  justify-content: center;
+}
+
+.icons-contato-custom .social-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.icons-contato-custom .social-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 26px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* icones do footers redes sociais */
+/* Estilo dos ícones no rodapé */
+.social-icons-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 70%;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Efeito de hover na versão desktop */
+.social-icons-footer .social-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+}
+
+/* estilo geral footer */
+footer {
+  background: #222;
+  color: #ccc;
+  font-size: 14px;
+  border-top: 3px solid #6e4c1e;
+}
+
+footer a {
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f4a261;
 }
