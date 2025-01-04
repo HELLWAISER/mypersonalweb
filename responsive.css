@@ -286,3 +286,22 @@
     height: 40px;
   }
 }
+
+
+/* Oculta o texto mobile na versão desktop */
+/* desktop = visualizar curriculum */
+/* mobile = ver curriculum  */
+.mobile-text {
+  display: none;
+}
+
+/* Oculta o texto desktop na versão mobile */
+@media (max-width: 768px) {
+  .desktop-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: inline;
+  }
+}
