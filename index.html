@@ -32,8 +32,8 @@
   <body>
     <nav class="navbar navbar-expand-lg custom-navbar">
       <div class="container-fluid">
-        <!-- Logo ajustado -->
-        <a class="navbar-brand navbar-brand-custom" href="#">
+        <!-- Logo Ajustado -->
+        <a class="navbar-brand navbar-brand-custom" id="top">
           <img
             src="images/DALL·E 2024-12-03 13.32.14 - A round logo with a soft pastel color palette featuring the letters 'V' and 'R' elegantly intertwined in the center. The design is moderately detailed.webp"
             alt="Logo" />
@@ -43,7 +43,7 @@
           aria-controls="offcanvasMenu">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Links do Menu -->
+        <!-- Links do Menu Desktop -->
         <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="3000" data-aos-once="true">
           <div class="mx-auto-custom">
             <ul class="navbar-nav d-flex flex-row justify-content-center">
@@ -61,8 +61,8 @@
         </div>
       </div>
     </nav>
-    </nav>
     <!-- Offcanvas Menu -->
+    <!-- Links do Menu Mobile -->
     <div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasMenu"
       aria-labelledby="offcanvasMenuLabel">
       <div class="offcanvas-header">
@@ -86,19 +86,26 @@
     <section class="container-fluid py-5 section-content section-custom px-5 px-sm-5">
       <div class="row align-items-center g-5 px-0 px-md-3 mt-lg-5">
         <!-- Texto no lado esquerdo -->
-        <div class="col-lg-6 text-center text-lg-start px-0 px-sm-3 mt-lg-5  text-wrapper">
+        <div class="col-lg-6 text-center text-lg-start px-0 px-sm-3 mt-lg-5 text-wrapper">
           <div class="text-wrapper">
             <h1 class="mb-3 fw-bold" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="700"
-              data-aos-once="true">Bem-vindo ao Meu Portfólio
+              data-aos-once="true">
+              Bem-vindo ao Meu Portfólio
             </h1>
             <p class="mb-5" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700" data-aos-once="true">
-              "Sou um desenvolvedor e analista apaixonado por criar soluções criativas e funcionais, explore meus
-              projetos".
+              "Sou um desenvolvedor e analista apaixonado por criar soluções
+              criativas e funcionais, explore meus projetos".
             </p>
             <!-- Botões -->
-            <div class="d-flex justify-content-center gap-3">
-              <a href="#" class="btn btn-primary btn-gradient">CURRICULUM</a>
-              <a href="#" class="btn btn-primary btn-gradient">PROJETOS</a>
+            <div class="d-flex flex-column gap-4">
+              <!-- Visualizar PDF -->
+              <a href="/curriculum/Desenvovimento.pdf" target="_blank" class="btn btn-gradient custom-button">
+                <i class="fas fa-eye"></i> VISUALIZAR CURRICULUM
+              </a>
+              <a href="/curriculum/Desenvovimento.pdf" download="curriculum" class="btn btn-gradient custom-button">
+                <i class="fas fa-download"></i> BAIXAR CURRICULUM
+              </a>
+              <a href="#portfolio" class="btn btn-gradient custom-button">PROJETOS</a>
             </div>
           </div>
         </div>
@@ -109,9 +116,9 @@
               <!-- Lado frontal -->
               <div class="flip-card-front text-center p-4">
                 <img src="/images/1710292265333.jpeg" alt="Profile Picture" class="rounded-circle mb-3"
-                  style="width: 120px; height: 120px;">
+                  style="width: 120px; height: 120px" />
                 <h3 class="fw-bold mb-1">Vitor Rodrigues</h3>
-                <hr class="w-50 mx-auto">
+                <hr class="w-50 mx-auto" />
                 <p>Analista de sistemas</p>
                 <p>Segurança da Informação</p>
                 <p>Analista Suporte TI</p>
@@ -141,7 +148,7 @@
         <p id="typed-contact" class="mobile-only text-center mt-2"></p>
       </div>
     </section>
-    <section class="container-fluid py-5 about-section section-custom-about">
+    <section id="about" class="container-fluid py-5 about-section section-custom-about">
       <div class="reveal-box shadow-sm rounded box-about">
         <div class="row align-items-center g-5">
           <!-- Imagem à esquerda -->
@@ -149,7 +156,7 @@
             <div class="image-container">
               <img
                 src="/images/african-american-engineer-programming-app-code-developing-online-software-with-cloud-server-firewall-security-coding-new-user-interface-with-binary-code-html-program-web-development.jpg"
-                alt="About Me" class="img-fluid rounded shadow">
+                alt="About Me" class="img-fluid rounded shadow" />
               <!-- Efeito degradê -->
               <div class="gradient-overlay"></div>
             </div>
@@ -157,45 +164,53 @@
           <!-- Texto à direita -->
           <div class="col-lg-6 col-12">
             <h2 class="fw-bold mb-4">Sobre mim</h2>
-            <hr class="section-divider">
+            <hr class="section-divider" />
             <p class="text-muted" data-aos="fade-up" data-aos-duration="1300">
-              Sou formado em <strong>Análise e Desenvolvimento de Sistemas</strong> e atualmente estou cursando o
-              <strong>1º semestre de Segurança da Informação</strong>. Tenho experiência em desenvolvimento de landing
-              pages, design gráfico e interfaces UI/UX, além de habilidades em suporte técnico e manutenção de
-              computadores.
+              Sou formado em
+              <strong>Análise e Desenvolvimento de Sistemas</strong> e
+              atualmente estou cursando o
+              <strong>1º semestre de Segurança da Informação</strong>. Tenho
+              experiência em desenvolvimento de landing pages, design gráfico e
+              interfaces UI/UX, além de habilidades em suporte técnico e
+              manutenção de computadores.
             </p>
             <ul class="list-unstyled mt-3">
               <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
-                <i class="fas fa-check-circle text-primary"></i> Desenvolvimento Web: HTML, CSS, Bootstrap, JavaScript
+                <i class="fas fa-check-circle text-primary"></i> Desenvolvimento
+                Web: HTML, CSS, Bootstrap, JavaScript
               </li>
               <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="700">
-                <i class="fas fa-check-circle text-primary"></i> Back-End (em estudo): Node.js, Python
+                <i class="fas fa-check-circle text-primary"></i> Back-End (em
+                estudo): Node.js, Python
               </li>
               <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000">
-                <i class="fas fa-check-circle text-primary"></i> Montagem e manutenção de computadores
+                <i class="fas fa-check-circle text-primary"></i> Montagem e
+                manutenção de computadores
               </li>
               <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1300">
-                <i class="fas fa-check-circle text-primary"></i> Desbloqueio de dispositivos móveis
+                <i class="fas fa-check-circle text-primary"></i> Desbloqueio de
+                dispositivos móveis
               </li>
             </ul>
             <h4 class="fw-bold mt-4">Objetivo Profissional</h4>
             <p class="text-muted">
-              Meu objetivo é atuar na área de desenvolvimento web ou segurança da informação, contribuindo para criar
-              soluções
-              inovadoras e funcionais, além de continuar aprendendo sobre DevOps e infraestrutura de TI.
+              Meu objetivo é atuar na área de desenvolvimento web ou segurança
+              da informação, contribuindo para criar soluções inovadoras e
+              funcionais, além de continuar aprendendo sobre DevOps e
+              infraestrutura de TI.
             </p>
           </div>
         </div>
       </div>
     </section>
     <!-- Portifólio -->
-    <section class="container-fluid py-5 project-carousel">
+    <section id="portfolio" class="container-fluid mt-5 py-5 project-carousel">
       <h2 class="text-center fw-bold mb-5">Meus Projetos</h2>
       <div id="gradientCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <!-- Slide 1 -->
           <div class="carousel-item active position-relative">
-            <img src="/images/g_5.jpg" class="d-block w-100 img-fluid" alt="Projeto 1">
+            <img src="/images/g_5.jpg" class="d-block w-100 img-fluid" alt="Projeto 1" />
             <div class="carousel-caption bg-gradient p-4">
               <h4 class="text-white">Art</h4>
               <h5 class="text-white">Exibições de arte urbana SP</h5>
@@ -204,7 +219,7 @@
           </div>
           <!-- Slide 2 -->
           <div class="carousel-item position-relative">
-            <img src="/images/header.jpg" class="d-block w-100 img-fluid" alt="Projeto 2">
+            <img src="/images/header.jpg" class="d-block w-100 img-fluid" alt="Projeto 2" />
             <div class="carousel-caption bg-gradient p-4">
               <h4 class="text-white">Business</h4>
               <h5 class="text-white">Página negócios e cadastro</h5>
@@ -233,31 +248,41 @@
         <!-- Habilidade 1 -->
         <div class="col-lg-4 col-md-6 col-12 mt-5">
           <i class="fas fa-laptop-code fa-3x color-custom"></i>
-          <h5 class="mt-3" data-aos="fade-down" data-aos-duration="800" data-aos-delay="800">Front-end</h5>
+          <h5 class="mt-3" data-aos="fade-down" data-aos-duration="800" data-aos-delay="800">
+            Front-end
+          </h5>
           <p class="text-muted">HTML, CSS, JavaScript, Bootstrap</p>
         </div>
         <!-- Habilidade 2 -->
         <div class="col-lg-4 col-md-6 col-12">
           <i class="fas fa-paint-brush fa-3x color-custom"></i>
-          <h5 class="mt-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">UI/UX Design</h5>
+          <h5 class="mt-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+            UI/UX Design
+          </h5>
           <p class="text-muted">Design de interfaces e experiências visuais</p>
         </div>
         <!-- Habilidade 3 -->
         <div class="col-lg-4 col-md-6 col-12">
           <i class="fas fa-server fa-3x color-custom"></i>
-          <h5 class="mt-3" data-aos="fade-down" data-aos-duration="800" data-aos-delay="800">Back-End</h5>
+          <h5 class="mt-3" data-aos="fade-down" data-aos-duration="800" data-aos-delay="800">
+            Back-End
+          </h5>
           <p class="text-muted">Node.js, React, Sql</p>
         </div>
         <!-- Habilidade 4 -->
         <div class="col-lg-4 offset-lg-4 col-md-6 col-12 text-center">
           <i class="fas fa-microchip fa-3x color-custom"></i>
-          <h5 class="mt-3" data-aos="fade-down" data-aos-duration="800" data-aos-delay="800">Tecnico Hardware</h5>
-          <p class="text-muted">manutenção montagem PC, desbloquei celular (senha - email)</p>
+          <h5 class="mt-3" data-aos="fade-down" data-aos-duration="800" data-aos-delay="800">
+            Tecnico Hardware
+          </h5>
+          <p class="text-muted">
+            manutenção montagem PC, desbloquei celular (senha - email)
+          </p>
         </div>
       </div>
     </section>
     <!-- Seção de Certificações e Educação -->
-    <section class="container-fluid py-5 education-section certifications-section mt-5">
+    <section class="container-fluid py-5 mt-5 education-section certifications-section mt-5">
       <div class="container">
         <!-- Título Centralizado -->
         <h2 class="text-center fw-bold mb-5">Certificações & Educação</h2>
@@ -328,7 +353,7 @@
                   <div class="card text-center shadow h-100">
                     <div class="card-body">
                       <h5 class="card-title fw-bold">Git</h5>
-                      <p class="card-text text-muted">Comandos git </p>
+                      <p class="card-text text-muted">Comandos git</p>
                       <p class="small text-muted">Plataforma: Udemy</p>
                       <!-- Botão Link -->
                       <div class="text-center">
@@ -395,62 +420,68 @@
       </div>
     </section>
     <!-- Sessão contato -->
-    <section class="container-fluid py-5 contact-section">
+    <section id="contact" class="container-fluid py-5 contact-section">
       <div class="container">
         <h2 class="text-center fw-bold mb-4">Entre em Contato</h2>
-        <p class="text-center text-muted mb-5">Fique à vontade para enviar uma mensagem ou conectar-se pelas redes
-          sociais.</p>
+        <p class="text-center text-muted mb-5">
+          Fique à vontade para enviar uma mensagem ou conectar-se pelas redes
+          sociais.
+        </p>
         <div class="row">
           <div class="col-md-6 mb-4">
             <form>
               <div class="mb-3">
                 <label for="name" class="form-label">Seu Nome</label>
-                <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required>
+                <input type="text" class="form-control" id="name" placeholder="Digite seu nome" required />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Seu E-mail</label>
-                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required />
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Mensagem</label>
                 <textarea class="form-control" id="message" rows="5" placeholder="Digite sua mensagem"
                   required></textarea>
               </div>
-              <button type="submit" class="btn btn-gradient w-100">Enviar</button>
+              <button type="submit" class="btn btn-gradient w-100">
+                Enviar
+              </button>
             </form>
           </div>
           <div class="col-md-6 text-center">
             <h4 class="fw-bold">Ou me encontre nas redes sociais</h4>
             <div class="icons-contato-custom">
               <a href="https://www.linkedin.com/in/vitor-rodrigues-gomes/" target="_blank" class="social-icon">
-                <img src="images/linkedin.png" alt="LinkedIn" class="social-img">
+                <img src="images/linkedin.png" alt="LinkedIn" class="social-img" />
               </a>
               <a href="https://github.com/HELLWAISER" target="_blank" class="social-icon">
-                <img src="images/github.png" alt="GitHub" class="social-img">
+                <img src="images/github.png" alt="GitHub" class="social-img" />
               </a>
               <a href="https://www.instagram.com/vitor_rodrigues_dev/" target="_blank" class="social-icon">
-                <img src="/images/social.png" alt="Instagram" class="social-img">
+                <img src="/images/social.png" alt="Instagram" class="social-img" />
               </a>
               <a href="https://discord.com/users/HELLWAISER#0415" target="_blank" class="social-icon">
-                <img src="images/discord (1).png" alt="Discord" class="social-img">
+                <img src="images/discord (1).png" alt="Discord" class="social-img" />
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="container-fluid py-5 call-to-action">
-      <div class="container text-center">
+    <section class="container-fluid mt-5 py-5 call-to-action">
+      <div class="container text-center mt-5">
         <h2 class="fw-bold">Interessado em Trabalhar Juntos?</h2>
-        <p class="text-muted mb-4">Estou disponível para novos projetos ou parcerias. Entre em contato e vamos
-          conversar!</p>
-        <a href="#contact" class="btn btn-gradient">Entre em Contato</a>
+        <p class="text-muted mb-4">
+          Estou disponível para novos projetos ou parcerias. Entre em contato e
+          vamos conversar!
+        </p>
+        <a class="btn btn-gradient">Entre em Contato</a>
       </div>
     </section>
-    <div class="container-fluid py-5 location">
+    <div class="container-fluid mt-5 py-5 location">
       <div class="container text-center">
         <h2 class="fw-bold">Localização</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;"
+        <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border: 0"
           allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
@@ -460,7 +491,9 @@
         <div class="row align-items-center text-center">
           <!-- Informações sobre o site -->
           <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <p class="mb-0">Desenvolvido por <strong>Vitor Rodrigues Gomes</strong></p>
+            <p class="mb-0">
+              Desenvolvido por <strong>Vitor Rodrigues Gomes</strong>
+            </p>
             <p class="mb-0">© 2023 Todos os direitos reservados.</p>
             <p class="small text-muted">Última atualização: Dezembro 2023</p>
           </div>
@@ -468,24 +501,27 @@
           <div class="col-md-0 text-center">
             <div class="social-icons-footer d-flex justify-content-center gap-3 mt-3">
               <a href="https://www.linkedin.com/in/vitor-rodrigues-gomes/" target="_blank" class="social-icon">
-                <img src="images/linkedin.png" alt="LinkedIn" class="social-img">
+                <img src="images/linkedin.png" alt="LinkedIn" class="social-img" />
               </a>
               <a href="https://github.com/HELLWAISER" target="_blank" class="social-icon">
-                <img src="images/github_PNG51.png" alt="GitHub" class="social-img">
+                <img src="images/github_PNG51.png" alt="GitHub" class="social-img" />
               </a>
               <a href="https://www.instagram.com/vitor_rodrigues_dev/" target="_blank" class="social-icon">
-                <img src="/images/social.png" alt="Instagram" class="social-img">
+                <img src="/images/social.png" alt="Instagram" class="social-img" />
               </a>
               <a href="https://discord.com/users/HELLWAISER#0415" target="_blank" class="social-icon">
-                <img src="images/discord (1).png" alt="Discord" class="social-img">
+                <img src="images/discord (1).png" alt="Discord" class="social-img" />
               </a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <a href="#" class="btn btn-outline-danger btn-sm rounded-circle position-fixed" style="bottom: 20px; right: 15px;">
-      <i class="fas fa-arrow-up"></i>
+    <!-- Botão de Retorno ao Topo -->
+    <a href="#top" class="btn btn-outline-danger btn-sm rounded-circle position-fixed btn-outline-danger-custom">
+      <img
+        src="images/DALL·E 2024-12-03 13.32.14 - A round logo with a soft pastel color palette featuring the letters 'V' and 'R' elegantly intertwined in the center. The design is moderately detailed.webp"
+        alt="Seta para cima" class="btn-img" />
     </a>
     <!-- Bootstrap Bundle JS (inclui Popper.js) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"
@@ -494,6 +530,7 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
     <!-- Scripts personalizados -->
     <script src="maqescrever.js" defer></script>
+    <script src="menu-fix.js"></script>
     <!-- Inicialize o AOS -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
