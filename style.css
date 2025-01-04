@@ -1,4 +1,9 @@
 /* Estilos iniciais - cores, fontes, tamanhos... */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.6;
   overflow-x: hidden;
@@ -35,14 +40,14 @@ h6 {
 
 /* config navbar */
 .custom-navbar {
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(85px);
   box-shadow: 0px 5px 106px rgba(0, 0, 0, 0.5);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 /* Links da Navbar */
 .navbar-nav .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: #000000;
   transition: color 0.4s ease-in-out;
