@@ -104,6 +104,12 @@
     background-position: right center;
   }
 
+  #about {
+    padding-top: 8rem; /* Adicione espaçamento interno */
+    background-color: #f9f4ef; /* Certifique-se de usar a mesma cor */
+  }
+  
+
   /* Espaçamento e centralização ajustados */
   .d-flex.justify-content-center.gap-3 {
     margin-top: 20px;
