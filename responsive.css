@@ -40,9 +40,6 @@
     margin: 0 auto; /* Centraliza o botão horizontalmente */
   }
   
-
-
-
   /* Estilo do offcanvas */
   .custom-offcanvas {
     background: linear-gradient(135deg, #9b8371 0%, #ebd6be 50%, #7a5e47 100%);
@@ -178,6 +175,12 @@
       margin-top: 2px;
       font-size: 0.9rem;
       color: #000000;
+    }
+    .flip-card {
+      margin-top: 10px; 
+      padding-top: 0;
+      width: 100px;
+      height: 150px;
     }
   }
 }
