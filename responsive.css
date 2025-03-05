@@ -15,7 +15,6 @@
   }
 
   /* linha sutil off canvas */
-
   .diagonal-line {
     position: relative;
     width: 100%;
@@ -27,14 +26,12 @@
     position: absolute;
     top: 110px; /* Ajuste fino para alinhar melhor */
     left: 50%; /* Posiciona no centro do container */
-    transform: translateX(-50%) rotate(90deg); /* Corrige alinhamento e gira a linha */
-    width: 190px; /* Comprimento da linha */
+    transform: translateX(-50%) rotate(0deg); /* Corrige alinhamento e gira a linha */
+    width: 100px; /* Comprimento da linha */
     height: 1px; /* Espessura da linha */
     background-color: white; /* Cor da linha */
   }
   
-  
-
   /* Estilo da navbar */
   .custom-navbar {
     display: flex;
@@ -73,7 +70,7 @@
     display: flex;
     gap: 15px; /* Espaçamento entre os ícones */
     justify-content: center;
-    margin-bottom: 10px;
+    margin-top: 180px;
   }
 
   .social-icon {
