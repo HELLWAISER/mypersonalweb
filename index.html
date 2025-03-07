@@ -268,7 +268,12 @@
             <div class="carousel-caption bg-gradient p-4">
               <h4 class="text-white">ORKUT</h4>
               <h5 class="text-white">Clone da antiga rede social</h5>
-              <a href="https://orkut-nostalgia-2010.vercel.app/" target="_blank" class="btn btn-outline-light mt-2">View</a>
+              <a href="https://orkut-nostalgia-2010.vercel.app/" 
+                 target="_blank" 
+                 class="btn btn-outline-light mt-2" 
+                 onclick="return verificarTela(event, this.href)">
+                View
+              </a>
             </div>
           </div>
         </div>
@@ -578,6 +583,7 @@
     <!-- Scripts personalizados -->
     <script src="maqescrever.js" defer></script>
     <script src="menu-fix.js"></script>
+    <script src="responsive-page.js"></script>
     <!-- Inicialize o AOS -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
